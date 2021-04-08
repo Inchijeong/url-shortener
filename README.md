@@ -2,7 +2,7 @@
 
 
 
-![screenshot.png](1.png)
+![screenshot.png](./screenshots/1.png)
 
 
 
