@@ -1,0 +1,30 @@
+<html xmls:th="http://www.thymeleaf.org">
+
+	<head>
+		<title>URL Shortener</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<div>
+			<h1>URL Shortener</h1>
+		</div>
+		<div>
+		    <form action="#" th:action="@{/shortener}" method="post" />
+			    <input type="text" th:name="longURL" required />
+			    <button type="submit">ENTER</button>
+		    </form>
+		    <br/>
+		
+		    <div class="panel">
+		        Original URL : 
+		        <a th:href="${resUrlDto != null} ? ${resUrlDto.longURL}" th:text="${resUrlDto != null} ? ${resUrlDto.longURL}"></a>
+		        <br/>
+		        Shortened URL : 
+		        <a th:href="${resUrlDto != null} ? ${resUrlDto.shortURL}" th:text="${resUrlDto != null} ? ${resUrlDto.shortURL}"></a>
+		        <br/>
+		        Number of searches : 
+		        <span th:text="${resUrlDto != null} ? ${resUrlDto.visited}"></span>
+		    </div>
+		</div>
+	</body>
+</html>
