@@ -253,7 +253,7 @@ Linux(CentOS) 환경에서 배포/실행 순서.
 2. 소스 다운
 
    ```
-   git clone [URL Shortener Github 주소]
+   git clone https://github.com/Inchijeong/url-shortener.git
    ```
 
 3. build
