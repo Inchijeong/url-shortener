@@ -2,6 +2,10 @@
 
 
 
+![screenshot.png](1.png)
+
+
+
 ## 기능
 
 1. URL을 입력받아 Shortened URL 생성.
